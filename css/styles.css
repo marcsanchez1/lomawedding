@@ -10,15 +10,16 @@ img {
 }
 
 .navbar-expand-lg {
-  background: rgba(255, 255, 255, 0.5) !important;
+  /* background: rgba(255, 255, 255, 0.5) !important; */
   /* box-shadow: 0px 0px 15px -3px #333 !important; */
 }
 
 .main-header {
   padding-top: 100px;
   height: 850px;
-  background: linear-gradient(#FFF, transparent 60%),
-              linear-gradient(0deg, #fff, transparent 40%),
+  background: 
+  /* linear-gradient(#FFF, transparent), */
+              /* linear-gradient(0deg, #fff, transparent 60%), */
               #FFF url('/imgs/hero-img.jpg') no-repeat bottom;
   background-size: cover;
   text-align: center;
@@ -55,7 +56,7 @@ img {
 #wedding-party,
 #locations,
 #gift-registry {
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 #intro {
@@ -65,10 +66,14 @@ img {
   margin: auto;
 }
 
+#intro p {
+  text-align: justify;
+}
+
 .headings {
   text-align: center;
   color: rgba(128,0,0,0.5);
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
   /* ===================================
@@ -79,18 +84,19 @@ img {
     .main-header {
       max-height: 380px;
       padding: 0 25px;
-      margin-top: 50px~^~^^~;
+      /* margin-top: 50px; */
     }
 
     .title {
-      font-size: 1.3rem;
+      font-size: 1rem;
       border: none;
     }
 
     .main-header h1 {
-      font-size: 4rem;
+      font-size: 3rem;
       line-height: 1.1;
       text-shadow: none;
+      padding-top: 25px;
     }
 
     .date {
@@ -104,7 +110,6 @@ img {
     #intro {
       width: 90%;
     }
-
   }
 
 /* ===================================
@@ -122,8 +127,8 @@ img {
 }
 
 .gallery-block{
-  padding-bottom: 60px;
-  padding-top: 60px;
+  /* padding-bottom: 60px;
+  padding-top: 60px; */
 }
 
 .gallery-block .heading {
@@ -194,6 +199,15 @@ img {
   color: rgb(128, 0 ,0);
 }
 
+.lead a:hover {
+  color: rgba(128, 0 ,0, 0.5);
+}
+
+.fa-camera:before{
+  color: #FFF;
+  margin-right: 5px;
+}
+
   /* ===================================
       HERO IMG AND TEXT MEDIA QUERIES
   ====================================== */
@@ -244,17 +258,15 @@ img {
 }
 
 #closing-pic {
-  display: block;
   height: 800px;
-  width: 100%;
-  background: url('/imgs/closing-pic.jpg') no-repeat bottom;
+  background: url('/imgs/closing-pic.jpg') no-repeat;
   background-size: cover;
   background-attachment: fixed;
   box-shadow: inset 1px 1px 14px #333;
+  text-align: center;
 }
 
 #closing-pic h2 {
-  text-align: center;
   padding-top: 100px;
   color: #FFF;
   font-size: 4rem;
@@ -266,15 +278,24 @@ img {
           MEDIA QUERIES FOR CLOSING
   ====================================== */
 
-  @media (min-width:767px) {
+  @media (min-width:768px) {
+
+    #closing-pic {
+      /* height: 380px; */
+      background-position: 50%;
+    }
 
     #closing-pic h2 {
       font-size: 8rem;
     }
+  }
+
+  @media (max-width: 736px) {
 
     #closing-pic {
-      max-height: 380px;
+      display: none;
     }
+    
   }
 
 /* ===================================
