@@ -30,7 +30,6 @@ img {
   color: rgb(128,0,0);
   line-height: 1.3; 
   text-shadow: 0 4px 14px rgba(0,0,0,.4);
-  /* margin: 50px 0 0; */
 }
 
 .title,
@@ -80,6 +79,7 @@ img {
     .main-header {
       max-height: 380px;
       padding: 0 25px;
+      margin-top: 50px;
     }
 
     .title {
@@ -269,6 +269,10 @@ img {
 
     #closing-pic h2 {
       font-size: 8rem;
+    }
+
+    #closing-pic {
+      max-height: 380px;
     }
   }
 
