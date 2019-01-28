@@ -9,10 +9,30 @@ img {
   width: 100%;
 }
 
+/* ===================================
+              NAVIGATION
+====================================== */
+
 .navbar-expand-lg {
-  /* background: rgba(255, 255, 255, 0.5) !important; */
-  /* box-shadow: 0px 0px 15px -3px #333 !important; */
+  background: rgba(255, 255, 255, 0.5) !important;
+  /* box-shadow: 0px 0px 15px -3px #333 !important;*/
 }
+
+.rsvp-nav {
+  background-color: rgba(128, 0, 0, 1);
+  color: #FFF !important;
+  border-radius: 5px;
+  transition: .25s ease-in-out;
+  border: 1px solid #800000;
+}
+
+.rsvp-nav:hover {
+  background-color: rgba(128, 0, 0, 0.5);
+}
+
+/* ===================================
+                HEADER
+====================================== */
 
 .main-header {
   padding-top: 100px;
@@ -52,28 +72,18 @@ img {
   margin-top: 35px;
 }
 
-#intro,
-#wedding-party,
-#locations,
-#gift-registry {
-  padding: 40px 0;
+button#rsvp {
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  border: 2px solid #800000;
+  border-radius: 5px;
+  padding: 15px 125px;
+  margin-top: 100px;
+  transition: .25s ease-in-out;
 }
 
-#intro {
-  font-size: 1rem; /* 20px/16px */
-  line-height: 1.6;
-  width: 60%;
-  margin: auto;
-}
-
-#intro p {
-  text-align: justify;
-}
-
-.headings {
-  text-align: center;
-  color: rgba(128,0,0,0.5);
-  padding-bottom: 20px;
+button#rsvp:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
   /* ===================================
@@ -106,7 +116,55 @@ img {
       padding: 5px 0;
       margin-top: 10px;
     }
+  }
 
+  @media (max-width: 991px) {
+    .rsvp-nav {
+      display: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+
+    button#rsvp {
+      display: none;
+    }
+  }
+
+/* ===================================
+            OUR STORY
+====================================== */
+
+#intro,
+#wedding-party,
+#locations,
+#gift-registry {
+  padding: 40px 0;
+}
+
+#intro {
+  font-size: 1rem; /* 20px/16px */
+  line-height: 1.6;
+  width: 60%;
+  margin: auto;
+}
+
+#intro p {
+  text-align: justify;
+}
+
+.headings {
+  text-align: center;
+  color: rgba(128,0,0,0.5);
+  padding-bottom: 20px;
+}
+
+  /* ===================================
+              MEDIA QUERIES
+  ====================================== */
+
+  @media (max-width: 768px) {
+    
     #intro {
       width: 90%;
     }
