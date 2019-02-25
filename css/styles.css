@@ -426,7 +426,7 @@ button#rsvp:hover {
 .crate-barrel,
 .honey-fund {
   display: block;
-  width: 75%;
+  width: 35%;
   transition: all .25s ease-in-out;
   margin: 0 auto;
   text-align: center;
