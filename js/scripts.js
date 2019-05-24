@@ -10,3 +10,5 @@ function callMessage() {
   el.textContent = newMessage;
   return addMessage();
 }
+
+$(".footer_powered_image").hide();
