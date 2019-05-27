@@ -427,8 +427,7 @@ button#rsvp:hover {
             GIFT REGISTRY
 ====================================== */
 
-.crate-barrel,
-.honey-fund {
+.crate-barrel {
   display: block;
   width: 35%;
   transition: all .25s ease-in-out;
@@ -440,26 +439,6 @@ button#rsvp:hover {
   transform: scale(1.1);
 }
 
-.honey-fund {
-  transition: all .25s ease-in-out;
-  margin-top: 50px;
-}
-
-.honey-fund:hover {
-  transform: scale(1.1);
-}
-
-/* ===================================
-      MEDIA QUERIES FOR GIFT REGISTRY
-  ====================================== */
-
-  @media (min-width:767px) {
-
-    .honey-fund {
-      margin-top: 0;
-    }
-  }
-
 /* ===================================
               FOOTER
 ====================================== */
@@ -469,4 +448,14 @@ footer {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 20px;
+}
+
+/* ===================================
+              RSVP PAGE
+====================================== */
+
+#rsvp-h1  {
+  text-align: center;
+  color: #853453;
+  margin-top: 30px;
 }
