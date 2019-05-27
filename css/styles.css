@@ -104,6 +104,15 @@ button#rsvp:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
+/* ========== RSVP PAGE ============== */
+
+#rsvp-h1 > h1  {
+  text-align: center;
+  color: #853453;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
   /* ===================================
               MEDIA QUERIES
   ====================================== */
@@ -448,14 +457,4 @@ footer {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 20px;
-}
-
-/* ===================================
-              RSVP PAGE
-====================================== */
-
-#rsvp-h1  {
-  text-align: center;
-  color: #853453;
-  margin-top: 30px;
 }
