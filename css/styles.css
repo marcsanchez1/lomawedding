@@ -193,6 +193,7 @@ button#rsvp:hover {
   font-size: 1.25rem; /* 20px/16px */
   line-height: 1.6;
   width: 90%;
+  max-width: 1110px;
   margin: auto;
 }
 
