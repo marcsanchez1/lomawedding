@@ -179,6 +179,36 @@ button#rsvp:hover {
   }
 
 /* ===================================
+            RSVP ACCORDION
+====================================== */
+
+.card-header {
+  background: rgba(133, 52, 83, .5);
+  text-align: center;
+  border-radius: 0;
+  border: none;
+  transition: .25s ease-in-out;
+}
+
+.card-header:hover {
+  background: rgb(133, 52, 83);
+}
+
+button.btn.btn-link.rsvp-accordion {
+  color: #FFF;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none;
+  transition: .25s ease-in-out;
+}
+
+.card-body {
+  /* background-color: rgba(133, 52, 83, 0.2); */
+}
+
+
+/* ===================================
             OUR STORY
 ====================================== */
 
